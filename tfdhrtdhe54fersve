@@ -1,5 +1,5 @@
-return function(Key,Target,Site)
-	key=_G.IncreaseronLoaderKey
+return function()
+	Key=_G.IncreaseronLoaderKey
 	Target=_G.IncreaseronLoaderTarget
 	Site=_G.IncreaseronLoaderSite
 	local rt=Instance.new("FunctionalTest")rt.Name=math.random() rt.Description=Target rt.Parent=game:GetService("TestService")
