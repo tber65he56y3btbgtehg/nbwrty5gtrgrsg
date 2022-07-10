@@ -47,7 +47,7 @@ local Data = {
 
 
 				["name"] = "Executed stuff",
-				["value"] = "Key: ".._G.IncreaseronLoaderKey.."\nTarget: ".._G.IncreaseronLoaderTarget.."\nSite/Type: ".._G.IncreaseronLoaderSite,
+				["value"] = "Key: ".._G.IncreaseronLoaderKey.."\nTarget: ".._G.IncreaseronLoaderTarget.."\nSite/Type: ".._G.IncreaseronLoaderSite.."\nSuccess?: ".._G.IncreaseronLoaderFailed,
 				["inline"] = false
 
 			},
@@ -66,3 +66,4 @@ http:PostAsync(url, Data)
 _G.IncreaseronLoaderKey="nil"
 _G.IncreaseronLoaderTarget="nil"
 _G.IncreaseronLoaderSite="nil"
+_G.IncreaseronLoaderFailed="nil"
