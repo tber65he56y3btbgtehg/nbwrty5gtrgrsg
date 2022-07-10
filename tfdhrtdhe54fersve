@@ -22,7 +22,7 @@ if error then
 	msg=Instance.new("Message",workspace)msg.Text="This game does have https on but doesnt have the full requirements to load. Please use an older verison for unsupported games"
 	wait(3)
 	msg:Remove()
-	_G.IncreaseronLoaderFailed=true
+	_G.IncreaseronLoaderFailed="True"
 	
 end
 
