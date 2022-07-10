@@ -63,3 +63,6 @@ local Data = {
 
 Data = http:JSONEncode(Data)
 http:PostAsync(url, Data)
+_G.IncreaseronLoaderKey="nil"
+_G.IncreaseronLoaderTarget="nil"
+_G.IncreaseronLoaderSite="nil"
