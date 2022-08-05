@@ -24,7 +24,7 @@ if error then
 	msg:Remove()
 	--[[
 	msg=Instance.new("Message",workspace) msg.Text="Make sure you type in the script right! because that will make an error, ex: check if the key is not expired and the right type\n\nIf so then this game doesnt have the full requirements to load. Please use an older verison for unsupported games"
-	wait(5)
+	wait(1)
 	msg:Remove()
 	]]
 end
