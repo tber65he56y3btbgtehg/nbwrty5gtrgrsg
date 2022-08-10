@@ -19,7 +19,7 @@ end)
 
 if error then
 	print(error)
-	msg=Instance.new("Message",workspace) msg.Text=error
+	msg=Instance.new("Message",workspace) msg.Text="error"
 	wait(1)
 	msg:Remove()
 	--[[
