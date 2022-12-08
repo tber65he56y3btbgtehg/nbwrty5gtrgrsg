@@ -1,3 +1,4 @@
+-- API LOOL
 local http = game:GetService("HttpService")
 local url = "https://media.guilded.gg/webhooks/7c425b8a-dc2d-406b-bff0-fd98f275b067/8wz3f87GykUmaoKaWWWAEIIEcec8eeaYcWYSc0qyqKyCiWa0YYOqW4qQ0CgMwM0yEe24seaaEM8A4USwuaGMGG"
 local Data = {
